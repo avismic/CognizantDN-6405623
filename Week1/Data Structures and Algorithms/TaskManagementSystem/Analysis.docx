@@ -1,0 +1,15 @@
+Analysis:  
+Types of Linked Lists  
+Singly Linked List: each node points only to the next. This structure is simple and uses memory efficiently.  
+Doubly Linked List: nodes have both next and previous pointers. It allows backward traversal but requires more memory.  
+Operation Complexities (Singly Linked List)  
+Add at end: O(n). You must traverse from head to tail.  
+Search by ID: O(n). You might have to scan the entire list.  
+Traverse all: O(n). This visits each node once.  
+Delete by ID: O(n). This involves searching and updating the pointer.  
+
+Advantages over Arrays:
+Dynamic size: there is no fixed capacity, allowing you to add and remove nodes without having to reallocate a contiguous block.  
+Cheap deletes and inserts at the front or middle: you simply update pointers. It is O(1) if you already have a reference to the node or its predecessor. In arrays, you would shift elements, which takes O(n).  
+Memory locality trade-off: arrays perform better with cache, but linked lists are better when the data size changes often or when you need O(1) inserts or deletes at known positions.  
+Linked lists are useful when you need flexibility and frequent changes without large block reallocations, but they have slower random access because they do not support O(1) indexing.

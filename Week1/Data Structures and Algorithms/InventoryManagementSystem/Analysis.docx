@@ -1,0 +1,14 @@
+Analysis:
+
+When your warehouse manages thousands or even millions of products, how you store and find items is crucial. Without the right data structures and algorithms, simple tasks like checking stock levels, adding new products, or removing discontinued items can slow down significantly and affect your entire system.
+For this problem, we chose a hash map (in Java, a HashMap<String, Product>) to store products using their ID as the key. Hash maps offer constant-time average performance for key operations:
+Add a product (put): O(1)
+Update a product’s details (another put): O(1)
+Delete a product (remove): O(1)
+Lookup a product (get): O(1)
+Even though hash collisions can theoretically lead to O(n) in the worst case, a good hash function and modern implementations make this so rare that it can be effectively ignored.
+To make these operations even more reliable:
+If you need to handle updates from multiple threads (for example, multiple warehouse terminals or automated systems), switching to a ConcurrentHashMap allows you to maintain the same O(1) behavior without risking data corruption.
+If you ever need products in a sorted order (like alphabetically or by quantity), you could use a TreeMap or keep a separate sorted index, where each insertion or deletion costs O(log n) but provides quick ordered traversals.
+For lookups based on fields other than the product ID (like category or price range), you can keep secondary indexes: additional maps from category to lists of products, from price buckets to products, and so on. This raises storage overhead but keeps each query fast.
+In short, using a hash-based map provides fast single-item operations. Adding concurrent maps, sorted structures, or extra indexes allows you to balance speed, order, and flexibility as your inventory needs grow.

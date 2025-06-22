@@ -1,0 +1,18 @@
+Analysis:
+
+Arrays are contiguous blocks of memory where each element is next to the previous one. This makes indexing by position very fast (O(1)), but resizing or inserting and removing in the middle requires shifting elements.  
+
+Operation Complexities  
+Add at end: O(1). This is a direct write to employees[size++], until the array is full.  
+Search by ID: O(n). This involves a linear scan through up to size elements.  
+Traverse: O(n). This visits each stored element once.  
+Delete by ID: O(n). This requires a linear scan to find the element, plus O(n) in the worst case to shift elements left.  
+Limitations of Arrays  
+Fixed capacity: You must know the maximum number of employees in advance.  
+Expensive deletes and inserts in the middle: Shifting elements costs O(n).  
+No built-in resizing: To grow beyond capacity, you need to allocate a new array and copy all elements (O(n)).  
+When to Use Arrays:
+You have a good estimate of size and few insert or remove operations in the middle.  
+Memory locality is important, as arrays have excellent cache performance.  
+They are useful for simple, compact storage of a fixed or slowly changing collection.  
+For more dynamic situations, where employees get added or removed frequently, you would typically switch to a List implementation (e.g., ArrayList for amortized O(1) adds at the end, or LinkedList for inexpensive mid-list inserts and deletes) or even map by ID (HashMap<String,Employee>) for O(1) lookups.  

@@ -1,0 +1,17 @@
+Analysis:
+Bubble Sort repeatedly compares and swaps adjacent elements until the list is ordered.  
+
+Time complexity:  
+Best case (already sorted): O(n) with the swapped-flag optimization  
+Average/Worst case: O(n²)  
+Space complexity: O(1) (in-place)  
+Quick Sort picks a pivot (here, the last element), partitions the array into lower and higher halves, then sorts each half recursively.  
+Time complexity:  
+Best/Average: O(n log n)  
+Worst (already sorted or bad pivot): O(n²)  
+Space complexity: O(log n) on average for recursion stack  
+Why Quick Sort Wins:
+On typical random data, Quick Sort’s average O(n log n) greatly outperforms Bubble Sort’s O(n²), especially as n grows.  
+It’s in-place, using minimal extra memory. With good pivot choices or randomization, the worst-case rarely occurs.  
+Bubble Sort is simple but practical only for very small lists or educational purposes.  
+In production scenarios with many orders, you should use Quick Sort or even better, hybrid algorithms like Arrays.sort() that utilize tuned versions of Quick and Merge Sort for reliable, high-performance sorting.
