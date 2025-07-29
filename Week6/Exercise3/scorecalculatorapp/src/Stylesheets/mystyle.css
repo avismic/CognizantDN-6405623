@@ -1,0 +1,15 @@
+.score-card {
+  border: 2px solid #333;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  font-family: Arial, sans-serif;
+}
+
+.score-card h2 {
+  margin: 0 0 0.5rem;
+}
+
+.score-card p {
+  margin: 0.25rem 0;
+}
