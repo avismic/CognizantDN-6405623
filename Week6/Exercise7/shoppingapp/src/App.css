@@ -1,0 +1,71 @@
+/* General body styling for a clean look */
+body {
+  background-color: #f4f7f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main container for our shopping list */
+.mydiv {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Styling for the main heading */
+h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Table header styling */
+th {
+  background-color: #4a90e2;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  text-align: left;
+}
+
+/* Rounding the corners of the header */
+th:first-child {
+  border-top-left-radius: 8px;
+}
+th:last-child {
+  border-top-right-radius: 8px;
+}
+
+/* Table cell styling */
+td {
+  padding: 15px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/* Zebra-striping for better readability */
+tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Hover effect for table rows */
+tbody tr:hover {
+  background-color: #e9ecef;
+  cursor: pointer;
+}
