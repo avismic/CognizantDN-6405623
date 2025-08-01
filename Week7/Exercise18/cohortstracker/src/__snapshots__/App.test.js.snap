@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cohort Details Component should always render same html 1`] = `
+<DocumentFragment>
+  <div
+    class="cohort-card"
+  >
+    <div
+      class="status-badge ongoing"
+    >
+      Ongoing
+    </div>
+    <h3
+      class="cohort-code"
+    >
+      CHRT-1234
+    </h3>
+    <h4
+      class="cohort-name"
+    >
+      React Developers - Q3 2025
+    </h4>
+    <p
+      class="cohort-description"
+    >
+      A dynamic cohort focused on mastering React.js, Redux, and modern frontend workflows.
+    </p>
+    <div
+      class="cohort-footer"
+    >
+      <span>
+        🎓 85 Learners
+      </span>
+      <span>
+        📍 Online
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,80 @@
+/* src/components/CohortDetails.css */
+
+.cohort-card {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cohort-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cohort-code {
+  color: #0056b3; /* A professional blue */
+  margin: 0 0 8px 0;
+  font-size: 1.5em;
+}
+
+.cohort-name {
+  color: #333;
+  margin: 0 0 16px 0;
+  font-weight: 600;
+}
+
+.cohort-description {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.cohort-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.cohort-footer span {
+  display: flex;
+  align-items: center;
+}
+
+.status-badge {
+  position: absolute;
+  top: 20px;
+  right: -35px;
+  transform: rotate(45deg);
+  padding: 5px 40px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.status-badge.ongoing {
+  background-color: #28a745; /* Green */
+}
+
+.status-badge.completed {
+  background-color: #dc3545; /* Red */
+}
+
+.cohort-card-empty {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+}

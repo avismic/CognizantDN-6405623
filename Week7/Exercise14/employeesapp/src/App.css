@@ -1,0 +1,143 @@
+/* src/App.css (Final Version) */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* App Container */
+.app-container {
+    min-height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.app-container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+}
+
+.app-container header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Employee List */
+.employee-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Button Styles */
+.button {
+  margin: 5px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+/* --- Light Theme --- */
+.app-container.light {
+    background-color: #f0f2f5;
+    color: #1c1e21;
+}
+
+.app-container.light header {
+    border-color: #ddd;
+}
+
+.card.light {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.card.light .avatar {
+    border-color: #007bff;
+}
+
+.button.light {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.button.light:hover {
+    background-color: #0056b3;
+}
+
+/* --- Dark Theme --- */
+.app-container.dark {
+    background-color: #121212;
+    color: #e4e6eb;
+}
+
+.app-container.dark header {
+    border-color: #333;
+}
+
+.card.dark {
+    background-color: #1e1e1e;
+    color: #e4e6eb;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card.dark .avatar {
+    border-color: #00e5ff;
+}
+
+.button.dark {
+    background-color: #00e5ff;
+    color: #121212;
+}
+
+.button.dark:hover {
+    background-color: #00b8d4;
+}
